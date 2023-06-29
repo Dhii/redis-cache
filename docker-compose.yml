@@ -28,5 +28,18 @@ services:
         PHP_TEST_VERSION: $PHP_TEST_VERSION
     container_name: "${PROJECT_NAME}_test"
     working_dir: ${BUILD_ROOT_PATH}
+    env_file:
+      - .env
+    depends_on:
+      - redis
     volumes:
       -  ${BASE_PATH}:${BUILD_ROOT_PATH}
+
+  redis:
+    image: redis:latest
+    container_name: "${PROJECT_NAME}_redis"
+    ports:
+      - '${REDIS_PORT}:${REDIS_PORT}'
+    volumes:
+      - "${BASE_PATH}docker/redis/redis.conf:/usr/local/etc/redis/redis.conf"
+    command: ['redis-server', ]
