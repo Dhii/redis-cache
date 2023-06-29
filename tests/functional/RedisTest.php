@@ -2,6 +2,7 @@
 
 namespace Dhii\RedisCache\Test\Func;
 
+use Exception;
 use Generator;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -10,9 +11,20 @@ use RedisException;
 
 class RedisTest extends TestCase
 {
+    protected Redis $redis;
+
+    public function setUp(): void
+    {
+        try {
+            $this->redis = $this->getNewRedis();
+        } catch (Exception $e) {
+            $this->markTestSkipped('Redis not available');
+        }
+    }
+
     public function testSetGet()
     {
-        $redis = $this->getNewRedis();
+        $redis = $this->redis;
         $key = 'mykey';
         $value = uniqid('myval');
         $redis->set($key, $value);
@@ -23,7 +35,7 @@ class RedisTest extends TestCase
 
     public function testRedisKeys()
     {
-        $redis = $this->getNewRedis();
+        $redis = $this->redis;
         $keys = [
             uniqid('key1'),
             uniqid('key2'),
