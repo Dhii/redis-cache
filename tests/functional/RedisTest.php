@@ -4,7 +4,6 @@ namespace Dhii\RedisCache\Test\Func;
 
 use Exception;
 use Generator;
-use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Redis;
 use RedisException;
