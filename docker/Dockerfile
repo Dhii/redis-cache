@@ -14,6 +14,11 @@ RUN apt-get install -y zip unzip curl git
 ## Composer
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
+## Redis Extension
+RUN pecl install -o -f redis \
+&&  rm -rf /tmp/pear \
+&&  docker-php-ext-enable redis
+
 WORKDIR ${BUILD_ROOT_PATH}
 COPY . ./
 
