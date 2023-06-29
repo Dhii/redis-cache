@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "033e4f90bb3d05f395dde3b7aa3a4252",
+    "content-hash": "b3028a015953dcb8b75bc5b73808c4a1",
     "packages": [],
     "packages-dev": [
         {
@@ -3728,12 +3728,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "8036a4c76c0dd29e60b6a7cafcacc50cf088ea62"
+                "reference": "1181fe9270e373537475e826873b5867b863883c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/8036a4c76c0dd29e60b6a7cafcacc50cf088ea62",
-                "reference": "8036a4c76c0dd29e60b6a7cafcacc50cf088ea62",
+                "url": "https://api.github.com/repos/symfony/string/zipball/1181fe9270e373537475e826873b5867b863883c",
+                "reference": "1181fe9270e373537475e826873b5867b863883c",
                 "shasum": ""
             },
             "require": {
@@ -3806,7 +3806,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-14T06:11:53+00:00"
+            "time": "2023-06-28T12:46:07+00:00"
         },
         {
             "name": "theseer/tokenizer",

@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Me\Library\" />
       <sourceFolder url="file://$MODULE_DIR$/tests/functional" isTestSource="true" packagePrefix="Me\Library\Test\Func\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpstan/phpdoc-parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-normalizer" />

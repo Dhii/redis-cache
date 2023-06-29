@@ -1,6 +1,6 @@
 {
-  "name": "dhii/php-project",
-  "description": "A PHP starter to ease project creation",
+  "name": "dhii/redis-cache",
+  "description": "A PSR-16 compliant Redis cache wrapper",
   "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
@@ -21,12 +21,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Me\\Library\\": "src"
+      "Dhii\\RedisCache\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Me\\Library\\Test\\Func\\": "tests/functional"
+      "Dhii\\RedisCache\\Test\\Func\\": "tests/functional"
     }
   },
   "config": {
