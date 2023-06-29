@@ -78,6 +78,7 @@
       <path value="$PROJECT_DIR$/vendor/fidry/cpu-core-counter" />
       <path value="$PROJECT_DIR$/vendor/spatie/array-to-xml" />
       <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

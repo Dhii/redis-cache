@@ -3,6 +3,10 @@
 
 A PSR-16 compliant Redis cache wrapper
 
+## Requirements
+- PHP 7.4 - 8.2;
+- Redis >= 2.6.12.
+
 ## Notes
 Started with [`dhii/php-project`][].
 
