@@ -25,10 +25,10 @@ These will become logically isolated, and can be cleared all at once.
 
 ```php
 // .. continued from previous example
-use Dhii\RedisCache\CachePool;
+use Dhii\RedisCache\CachePoolFactory;
 use Dhii\RedisCache\KeyPrefixingCachePoolFactory;
 /** @var Redis $redis */
-/** @var CachePool $cache */
+/** @var CachePoolFactory $factory */
 
 $namespace = 'mystuff';
 $prefix = "{$namespace}:";
@@ -41,7 +41,7 @@ $prefix = "{$namespace}:";
  * the prefixing factory has to find keys by prefix,
  * whereby base cache will empty the whole DB.
  */
-$prefixingFactory = new KeyPrefixingCachePoolFactory($cache, $redis);
+$prefixingFactory = new KeyPrefixingCachePoolFactory($factory, $redis);
 $prefixingCache = $prefixingFactory->createCachePoolWithPrefix($prefix);
 $prefixingCache->has('mykey'); // Actually checks for `mystuff:mykey`
 $prefixingCache->clear(); // Removes keys that match `mystuff:*` only
