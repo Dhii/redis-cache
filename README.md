@@ -1,7 +1,7 @@
 # Dhii - Redis Cache
 [![Continuous Integration](https://github.com/dhii/redis-cache/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/dhii/redis-cache/actions/workflows/continuous-integration.yml)
 
-A PSR-16 compliant Redis cache wrapper.
+A [PSR-16][]-compliant [Redis][] cache wrapper.
 
 ## Requirements
 - PHP 7.4 - 8.2;
@@ -51,4 +51,6 @@ $prefixingCache->clear(); // Removes keys that match `mystuff:*` only
 Started with [`dhii/php-project`][].
 
 
+[PSR-16]: https://www.php-fig.org/psr/psr-16/
+[Redis]: https://redis.io/
 [`dhii/php-project`]: https://github.com/Dhii/php-project
