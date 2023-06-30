@@ -79,6 +79,7 @@
       <path value="$PROJECT_DIR$/vendor/spatie/array-to-xml" />
       <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/gmazzap/andrew" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

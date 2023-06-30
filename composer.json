@@ -19,7 +19,8 @@
     "phpunit/phpunit": "^9.0 | ^10.0",
     "vimeo/psalm": "^5.0",
     "webmozart/path-util": "^2.3@stable",
-    "slevomat/coding-standard": "^6.0"
+    "slevomat/coding-standard": "^6.0",
+    "gmazzap/andrew": "^2.1"
   },
   "autoload": {
     "psr-4": {
