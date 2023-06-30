@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dhii\RedisCache\Test\Func;
+namespace Dhii\RedisCache\Test\Unit;
 
 use Andrew\Proxy;
 use Dhii\RedisCache\CachePoolFactory as Subject;
