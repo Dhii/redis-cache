@@ -50,7 +50,10 @@ $prefixingCache->clear(); // Removes keys that match `mystuff:*` only
 ## Notes
 Started with [`dhii/php-project`][].
 
+Looking for a transient cache for WordPress? Try [`wp-oop/transient-cache`][]!
+
 
 [PSR-16]: https://www.php-fig.org/psr/psr-16/
 [Redis]: https://redis.io/
 [`dhii/php-project`]: https://github.com/Dhii/php-project
+[`wp-oop/transient-cache`]: https://github.com/wp-oop/transient-cache
