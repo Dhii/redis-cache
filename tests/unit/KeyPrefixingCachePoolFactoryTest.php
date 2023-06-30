@@ -22,7 +22,7 @@ class KeyPrefixingCachePoolFactoryTest extends TestCase
         $innerFactory = $this->createCachePoolFactory();
         $subject = new Subject($innerFactory, $redis);
         $namespace = uniqid('namespace');
-        $prefix = "${namespace}:";
+        $prefix = "{$namespace}:";
 
         $cachePool = new Proxy($subject->createCachePoolWithPrefix($prefix));
         $this->assertSame($redis, $cachePool->redis);

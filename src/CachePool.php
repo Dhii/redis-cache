@@ -173,7 +173,7 @@ class CachePool implements CacheInterface
             return (bool) $redis->exec();
         } catch (Exception $e) {
             throw new CacheException(
-                sprintf('Could set values for %1$d keys with ttl %2$s', count($values), $ttl ? "${ttl}s" : 'null'),
+                sprintf('Could set values for %1$d keys with ttl %2$s', count($values), $ttl ? "{$ttl}s" : 'null'),
                 0,
                 $e
             );
